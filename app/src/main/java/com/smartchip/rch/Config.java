@@ -1,7 +1,7 @@
 package com.smartchip.rch;
 
 /**
- * Created by Ishrat Khan on 2/16/2015.
+ * Created by Ishrat Khan on 2/16/2015
  */
 public class Config {
 
