@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\G511318\Desktop\help\PDData\RuntimeCrashHandler\twoway-view-master\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\classes.jar"
+        jumboMode="false"
+        revision="21.1.1"
+        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
+        <dex dex="C:\Users\G511318\Desktop\help\PDData\RuntimeCrashHandler\twoway-view-master\app\build\intermediates\pre-dexed\debug\classes-9f53ff2f903c1eeea9191050d4f394ccb88e7a90.jar" />
+    </item>
+    <item
+        jar="C:\Users\G511318\Desktop\help\PDData\RuntimeCrashHandler\twoway-view-master\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\libs\internal_impl-21.0.3.jar"
+        jumboMode="false"
+        revision="21.1.1"
+        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
+        <dex dex="C:\Users\G511318\Desktop\help\PDData\RuntimeCrashHandler\twoway-view-master\app\build\intermediates\pre-dexed\debug\internal_impl-21.0.3-41782002d1f38a957c20f8c958765d7e5b8d706d.jar" />
+    </item>
+    <item
+        jar="C:\Users\G511318\Desktop\help\PDData\RuntimeCrashHandler\twoway-view-master\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.3\classes.jar"
+        jumboMode="false"
+        revision="21.1.1"
+        sha1="81d42bf983a8741f4888a6e333e454e4a5e0eeb7">
+        <dex dex="C:\Users\G511318\Desktop\help\PDData\RuntimeCrashHandler\twoway-view-master\app\build\intermediates\pre-dexed\debug\classes-846d43bfd135ed47f2a95600f22204c051c3ff07.jar" />
+    </item>
+    <item
+        jar="C:\Users\G511318\Desktop\Ishrat\Softwares\android-studio-ide-135.1538390-windows\sdk\extras\android\m2repository\com\android\support\support-annotations\21.0.3\support-annotations-21.0.3.jar"
+        jumboMode="false"
+        revision="21.1.1"
+        sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
+        <dex dex="C:\Users\G511318\Desktop\help\PDData\RuntimeCrashHandler\twoway-view-master\app\build\intermediates\pre-dexed\debug\support-annotations-21.0.3-285dcdcdcac8a19b3879b1bdb75162247406f4e7.jar" />
+    </item>
+
+</items>
