@@ -15,10 +15,6 @@ import android.widget.TextView;
 public class CrashDisplayActivity extends Activity{
     private TextView textViewCont;
 
-    private String exceptionContent;
-    private final String APP_NAME = "UncaughtExceptionHandlerMy";
-    private final String EMAIL_HEADER = "\n Please describe what you were doing when this crash happended: \n";
-
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,12 +23,15 @@ public class CrashDisplayActivity extends Activity{
         Config.IS_SEND_EMAIL = false;
         Config.IS_WRITE_TO_SDCARD = true;
         Config.STORAGE_PATH = Environment.getExternalStorageDirectory() + "/" + "zxy";
+        Config.EMAIL_ID = "ishrat.khan@morpho.com";
+        Config.EMAIL_HEADER = "\n Please describe what you were doing when this crash happended: \n";
+
         /**Register exception receiver*/
         Utils.register(this);
 
+
         /**Exception generate here to test code*/
-        exceptionContent = getIntent().getStringExtra("err");
-        textViewCont.setText(exceptionContent);
+        textViewCont.setText("Exception");
 
     }
 }
