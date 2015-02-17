@@ -14,7 +14,6 @@ import android.widget.TextView;
 
 public class CrashDisplayActivity extends Activity{
     private TextView textViewCont;
-    private Button buttonSend;
 
     private String exceptionContent;
     private final String APP_NAME = "UncaughtExceptionHandlerMy";
@@ -24,24 +23,16 @@ public class CrashDisplayActivity extends Activity{
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        Config.IS_SEND_EMAIL=false;
-        Config.IS_WRITE_TO_SDCARD=true;
-        Config.STORAGE_PATH= Environment.getExternalStorageDirectory()+"/"+"zxy";
+        /**Config*/
+        Config.IS_SEND_EMAIL = false;
+        Config.IS_WRITE_TO_SDCARD = true;
+        Config.STORAGE_PATH = Environment.getExternalStorageDirectory() + "/" + "zxy";
+        /**Register exception receiver*/
         Utils.register(this);
 
+        /**Exception generate here to test code*/
         exceptionContent = getIntent().getStringExtra("err");
         textViewCont.setText(exceptionContent);
 
-        buttonSend.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent(android.content.Intent.ACTION_SEND);
-                i.setType("plain/text");
-                i.putExtra(android.content.Intent.EXTRA_EMAIL, new String[]{"toci1@abv.bg"});
-                i.putExtra(android.content.Intent.EXTRA_SUBJECT, APP_NAME);
-                i.putExtra(android.content.Intent.EXTRA_TEXT, exceptionContent + EMAIL_HEADER);
-                startActivity(Intent.createChooser(i, "Send e-mail"));
-            }
-        });
     }
 }
